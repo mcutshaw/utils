@@ -42,7 +42,7 @@ def parse_args():
     args = parser.parse_args()
     return args
 
-if __name__ == "__main__":
+def main():
     args = parse_args()
     start, end = args.expression.split(",")
     start, end = start.strip(), end.strip()
@@ -60,3 +60,6 @@ if __name__ == "__main__":
         f.seek(start)
         with open(args.output, 'wb') as fo:
             fo.write(f.read(end-start))
+
+if __name__ == "__main__":
+    main()

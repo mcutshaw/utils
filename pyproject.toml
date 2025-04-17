@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "utils"  # Replace with your package name
+version = "0.1.0"
+description = "A brief description of your package"
+readme = "README.md"
+requires-python = ">=3.6"  # Adjust based on your requirements
+authors = [
+    { name = "Michael Cutshaw", email = "mike.cutshaw@hotmail.com" }
+]
+dependencies = [
+  "trio",
+ 
+]
+
+
+[project.scripts]
+dds = "binary.dds:main"  # Assuming you have a main function in dds.py
+findbininbin = "binary.findbininbin:main"  # Assuming you have a main function in findbininbin.py
